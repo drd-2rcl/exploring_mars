@@ -1,21 +1,34 @@
 # ExploringMars
 
-**TODO: Add description**
+Olá, seja bem-vindo(a).
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `exploring_mars` to your list of dependencies in `mix.exs`:
+Após fazer o download do projeto, execute o seguinte comando para entrar no console interativo do elixir:
 
 ```elixir
-def deps do
-  [
-    {:exploring_mars, "~> 0.1.0"}
-  ]
-end
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/exploring_mars](https://hexdocs.pm/exploring_mars).
+Basta chamar o módulo principal no console `ExploringMars.call` e serão solicitadas as informações de área, posição e direção cardinal. Serão solicitados duas vezes as posições e os comandos, em seguida sairão os dois resultados das movimentações da sonda com base nos valores inseridos.
 
+Conforme o exemplo dado por vocês:
+
+```elixir
+- Entrada de Teste:
+5 5
+12N
+LMLMLMLMM
+33E
+MMRMMRMRRM
+
+- Saída esperada:
+1 3 N
+5 1 E
+```
+
+Para rodar os testes execute no seu terminal:
+
+```elixir
+mix test
+```
+
+Agradeço a oportunidade :D.
